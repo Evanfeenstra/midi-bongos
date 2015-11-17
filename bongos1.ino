@@ -74,9 +74,9 @@ void loop() {
 
 void goLed() {
  for(int k=254; k>0; k=k-2) {
-  int kk=k/2;
+  int g=k/2;
     for(int i=31; i>=0; i--) {
-      leds[i]=CHSV(128-i*2-j+kk,187,k );
+      leds[i]=CHSV(128-i*2-j+g,187,k );
     }
     FastLED.show();
   }
@@ -84,9 +84,9 @@ void goLed() {
 
 void goLed2() {
  for(int k=254; k>0; k=k-2) {
-  int kk=k/2;
+  int g=k/2;
     for(int i=32; i<64; i++) {
-      leds[i]=CHSV(i*2+j-kk,187,k );
+      leds[i]=CHSV(i*2+j-g,187,k );
     }
     FastLED.show();
   }
